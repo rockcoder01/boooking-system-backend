@@ -1,0 +1,35 @@
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# IntelliJ module files
+*.iws
+
+# Miscellaneous
+.idea_modules/
+.atlassian-ide-plugin.xml
+
+# File-based project formats
+*.ipr
+
+# Local run/debug configurations
+/.run/
+
+# User-specific configuration
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+
+# VCS-specific files
+.idea/vcs.xml
+
+# Node.js project files (if applicable)
+.idea/jsLibraryMappings.xml
+
+# Gradle-specific files (if applicable)
+.idea/gradle.xml
+.idea/libraries/
+
+# Miscellaneous caches
+/out/
+.idea/shelf/
