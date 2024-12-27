@@ -48,9 +48,9 @@ public class WebSecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())  // Disable CSRF since we're using JWT
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("*/sign-up", "*/authenticate", "*/ads", "/search/{service}").permitAll()  // Permit all access to login and register
-
-                        .anyRequest().authenticated()  // Authenticate all other requests
+                        .requestMatchers("*/sign-up", "/login", "/ads", "/search/**").permitAll() // Permit these routes
+                        .requestMatchers("/api/**").authenticated() // Require authentication for API routes
+                        .anyRequest().denyAll() // Deny any other requests explicitly
                 )
                 .exceptionHandling(exception -> exception
                         .authenticationEntryPoint(jwtAuthenticationEntryPoint)  // Handle authentication exceptions

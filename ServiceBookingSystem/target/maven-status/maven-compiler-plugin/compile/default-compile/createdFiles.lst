@@ -1,7 +1,15 @@
+com\testing\ServiceBookingSystem\controller\AuthenticationController.class
 com\testing\ServiceBookingSystem\services\authatication\AuthServiceImpl.class
+com\testing\ServiceBookingSystem\entity\User.class
+com\testing\ServiceBookingSystem\utility\JwtAuthenticationFilter.class
+com\testing\ServiceBookingSystem\utility\JwtTokenUtil.class
+com\testing\ServiceBookingSystem\config\WebSecurityConfig.class
+com\testing\ServiceBookingSystem\services\authatication\AuthService.class
+com\testing\ServiceBookingSystem\dto\UserDTO.class
+com\testing\ServiceBookingSystem\utility\JwtAuthenticationEntryPoint.class
 com\testing\ServiceBookingSystem\dto\SignupRequestDTO.class
 com\testing\ServiceBookingSystem\ServiceBookingSystemApplication.class
-com\testing\ServiceBookingSystem\entity\User.class
+com\testing\ServiceBookingSystem\dto\AuthenticationRequest.class
 com\testing\ServiceBookingSystem\repository\UserRepository.class
 com\testing\ServiceBookingSystem\enums\UserRole.class
-com\testing\ServiceBookingSystem\services\authatication\AuthService.class
+com\testing\ServiceBookingSystem\config\JWTConfig.class

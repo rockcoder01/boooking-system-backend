@@ -7,6 +7,7 @@ import io.jsonwebtoken.security.SignatureException;
 import io.jsonwebtoken.Claims;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.util.Collection;
@@ -14,7 +15,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.function.Function;
 
-
+@Component
 public class JwtTokenUtil {
 
     private Key key = Keys.secretKeyFor(SignatureAlgorithm.HS512); // Properly generate a key
